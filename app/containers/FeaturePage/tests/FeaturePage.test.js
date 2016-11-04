@@ -5,7 +5,7 @@ import React from 'react';
 import Button from 'components/Button';
 import { FormattedMessage } from 'react-intl';
 import messages from '../messages';
-import { FeaturePage } from '../index';
+import { FeaturePage } from '../FeaturePage';
 import H1 from 'components/H1';
 
 describe('<FeaturePage />', () => {
