@@ -64,6 +64,16 @@
       "react",
       "stage-0"
     ],
+    "plugins": [
+      [
+        "filenamespace",
+        {
+          "root": "app",
+          "separator": "👌",
+          "dropAllFilenames": false
+        }
+      ]
+    ],
     "env": {
       "production": {
         "only": [
@@ -216,6 +226,7 @@
     "babel-core": "6.18.0",
     "babel-eslint": "7.1.0",
     "babel-loader": "6.2.7",
+    "babel-plugin-filenamespace": "^1.1.0",
     "babel-plugin-istanbul": "2.0.3",
     "babel-plugin-react-intl": "2.2.0",
     "babel-plugin-react-transform": "2.0.2",

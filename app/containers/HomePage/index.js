@@ -85,6 +85,9 @@ export class HomePage extends React.Component {
             <H2>
               <FormattedMessage {...messages.startProjectHeader} />
             </H2>
+            <H2>
+              {`..${__filenamespace}..`}
+            </H2>
             <p>
               <FormattedMessage {...messages.startProjectMessage} />
             </p>

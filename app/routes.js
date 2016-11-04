@@ -42,7 +42,7 @@ export default function createRoutes(store) {
       path: '/features',
       name: 'features',
       getComponent(nextState, cb) {
-        System.import('containers/FeaturePage')
+        System.import('containers/FeaturePage/FeaturePage')
           .then(loadModule(cb))
           .catch(errorLoading);
       },

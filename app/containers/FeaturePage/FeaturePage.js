@@ -33,6 +33,9 @@ export class FeaturePage extends React.Component {
         <H1>
           <FormattedMessage {...messages.header} />
         </H1>
+        <H1>
+          {`..${__filenamespace}..`}
+        </H1>
         <List>
           <ListItem>
             <ListItemTitle>
