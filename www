@@ -1,0 +1,23 @@
+var express = require('express');
+var path = require('path');
+
+var buildDir = path.join(__dirname, 'build');
+
+var server = express();
+server.use('/build', express.static(buildDir));
+
+// All files
+server.get(/\..+$/, function (req, res) {
+  let filename = req.path;
+  res.sendFile(buildDir + filename);
+});
+
+// Everything else
+server.get('*', function (req, res) {
+  res.sendFile(buildDir + '/index.html');
+});
+
+var port = process.env.PORT || '3000';
+server.listen(port, function () {
+  console.log('server listening on port ' + port);
+});
